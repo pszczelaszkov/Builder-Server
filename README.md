@@ -1,4 +1,6 @@
 Builder-Server
 ==============
 
-Simple server with Text-based protocol(little binary support for binary data such as images)
+Simple async server with Text-based protocol(little binary support for binary data such as images)
+Packet recommended structure:
+[1 byte command][x bytes message]["ENDSTREAM" string]
